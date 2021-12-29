@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const productSchema = new Schema({
+const ProductSchema = new Schema({
     _id: {
         pid: String
     },
@@ -42,3 +42,5 @@ const productSchema = new Schema({
         default: Date.now
     }
 });
+
+module.exports = Product = mongoose.model('product', ProductSchema);
